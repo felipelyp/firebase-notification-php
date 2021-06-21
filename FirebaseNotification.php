@@ -10,18 +10,18 @@ class FirebaseNotification
     /**
      * Enviar notificação
      *
-     * @param $destinario string passa token ou tópico específico
-     * @param $titulo string titulo da notificação
-     * @param $descricao string corpo da notificação
+     * @param $recipient string passa token ou tópico específico
+     * @param $title string titulo da notificação
+     * @param $body string corpo da notificação
      * @return bool|string retorna o status da notificação
      */
-    public static function sendTo($destinario, $titulo, $descricao)
+    public static function sendTo($recipient, $title, $body)
     {
         $data = [
-            "to" => $destinario,
+            "to" => $recipient,
             "notification" => [
-                "title" => $titulo,
-                "body" => $descricao,
+                "title" => $title,
+                "body" => $body,
             ]
         ];
 
