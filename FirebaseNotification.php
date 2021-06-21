@@ -50,7 +50,7 @@ class FirebaseNotification
         curl_close($ch);
 
         if (strpos($result, 'INVALID_KEY') !== false)
-            throw new Exception('Chave do Servidor incorreto');
+            throw new Exception('Chave do servidor incorreto');
 
         return $result;
     }
