@@ -45,13 +45,12 @@ class FirebaseNotification
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
         $result = curl_exec($ch);
 
         curl_close($ch);
 
-        if ($httpcode == 401) throw new Exception('Chave do Servidor incorreto');
+        if (strpos($result, 'INVALID_KEY') !== false)
+            throw new Exception('Chave do Servidor incorreto');
 
         return $result;
     }
