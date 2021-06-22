@@ -6,7 +6,7 @@ Envio de notificação por meio da api do Firebase Cloud Messaging
 
 Acesse seu Firebase e crie um aplicativo web, então entre nas configuraçôes de Cloud Messaging e copie a chave do servidor
 
-Para usar essa classe você precisar colocar sua chave do seu servidor na variavel [`$accessToken`](https://github.com/felipelyp/firebase-notification-php/blob/fe6f968e9043645386218e6cd494333baae75727/FirebaseNotification.php#L8") que fica dentro da classe [FirebaseNotification](https://github.com/felipelyp/firebase-notification-php/blob/fe6f968e9043645386218e6cd494333baae75727/FirebaseNotification.php#L3"), assim você pode usar a classe para enviar mensagens
+Para usar essa classe você precisar colocar sua chave do seu servidor na variavel [`$accessToken`](https://github.com/felipelyp/firebase-notification-php/blob/0878366f6e5da50f97dacb744f2c7fcdc0ce4793/FirebaseNotification.php#L8") que fica dentro da classe [FirebaseNotification](https://github.com/felipelyp/firebase-notification-php/blob/0878366f6e5da50f97dacb744f2c7fcdc0ce4793/FirebaseNotification.php#L3"), assim você pode usar a classe para enviar mensagens
 
 ```php
    class FirebaseNotification
